@@ -1,0 +1,134 @@
+body {
+    background-color: #5DB3A81A;
+}
+
+.container {
+    width: 95%;
+    height: 190vh;
+    border: 1px solid red;
+    margin: auto;
+    display: flex;
+}
+
+/* container_inner_left */
+.container_inner_left {
+    width: 10%;
+    height: 60vh;
+    border: 1px solid rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+   }
+
+/* logotip */
+.logotip {
+    width: 100px;
+    height: 100px;
+}
+
+ul {
+    height: 36vh;
+    list-style: none;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+    color: #8C8CB6;
+}
+
+ul li:hover {
+    color: blue;
+}
+
+
+/* container_inner_right */
+.container_inner_right {
+    width: 90%;
+    height: 100vh;
+    border: 2px solid rgb(7, 141, 20);
+}
+
+/* search */
+.search {
+    width: 650px;
+    height: 7vh;
+    color: #4E3F6F;
+    border-radius: 12px;
+    padding: 8px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 2px black;
+}
+
+/* container_inner_right_top */
+.container_inner_right_top {
+    width: 100%;
+    height: 8vh;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* card_right_top */
+.card_right_top {
+    display: flex;
+    color: #4E3F6F;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.img1 {
+    width: 50px;
+    height: 50px;
+}
+
+/* btnOut */
+.btnOut {
+    border: none;
+    border-left: 3px solid grey;
+    text-align: start;
+    width: 250px;
+    height: 7vh;
+    background-color: transparent;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btnOut:hover {
+    background-color: black;
+    color: white;
+}
+
+/* container_inner_right_top1 */
+.container_inner_right_top2{
+    width: 100%;
+    height: 5vh;
+    border: 1px solid red;
+}
+
+/* title_category */
+.title_category{
+    width: 100%;
+    height: 8vh;
+    border: 2px solid green;
+}
+
+/* card_category */
+.card_category{
+    width: 100%;
+    height: 40vh;
+    border: 2px solid red;
+}
+
+.card_music,.card_actor{
+    width: 300px;
+    height: 10vh;
+    border: 2px solid red;
+}
