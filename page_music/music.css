@@ -1,6 +1,54 @@
+.container_data {
+    width: 90%;
+    height: 150vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
 .card {
-    width: 550px;
-    height: 550px;
+    width: 30%;
+    height: 480px;
     border: 1px solid red;
-    box-shadow: 0px 0px 4pc black;
+    box-shadow: 0px 0px 8px black;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.title_music {
+    color: #4E3F6F;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btnDel {
+    width: 150px;
+    height: 5vh;
+    background-color: #4E3F6F;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 5px;
+}
+
+.btnDel:hover {
+    box-shadow: 0px 0px 3px black;
+}
+
+
+/* btnAddNew */
+.btnAddNew {
+    width: 50px;
+    height: 5vh;
+    background-color: #4E3F6F;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 5px;
+    font-size: 26px;
 }
