@@ -1,28 +1,22 @@
 {
   "data1": [
     {
-      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/84.jpg",
-      "name": "Selena Gomes",
-      "country": "USA",
-      "id": 1
-    },
-    {
-      "id": 2,
-      "name": "Justin Baber",
-      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1215.jpg",
-      "country": "Great Britian"
-    },
-    {
-      "id": 3,
-      "name": "Eminem ",
       "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/629.jpg",
-      "country": "Italy"
+      "name": "Eminem 4t5tg5",
+      "country": "Italyi",
+      "id": 3
     },
     {
       "id": 4,
       "name": "Jony Tom   ",
       "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/208.jpg",
       "country": "Germain"
+    },
+    {
+      "id": 1701696079186,
+      "avatar": "kkk",
+      "name": "jkkj",
+      "country": "1jgkvlkj"
     }
   ]
 }
