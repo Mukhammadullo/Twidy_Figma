@@ -3,9 +3,9 @@ body {
 }
 
 .container {
-    width: 95%;
-    height: 190vh;
-    border: 1px solid red;
+    width: 98%;
+    height: 170vh;
+    /* border: 1px solid red; */
     margin: auto;
     display: flex;
 }
@@ -13,13 +13,13 @@ body {
 /* container_inner_left */
 .container_inner_left {
     width: 10%;
-    height: 60vh;
-    border: 1px solid rebeccapurple;
+    height: 100vh;
+    /* border: 1px solid rebeccapurple; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-   }
+}
 
 /* logotip */
 .logotip {
@@ -50,8 +50,8 @@ ul li:hover {
 /* container_inner_right */
 .container_inner_right {
     width: 90%;
-    height: 100vh;
-    border: 2px solid rgb(7, 141, 20);
+    height: 160vh;
+    /* border: 12px solid rgb(7, 141, 20); */
 }
 
 /* search */
@@ -64,13 +64,14 @@ ul li:hover {
     border: none;
     outline: none;
     box-shadow: 0px 0px 2px black;
+    font-size: 18 px;
 }
 
 /* container_inner_right_top */
 .container_inner_right_top {
     width: 100%;
     height: 8vh;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -107,28 +108,165 @@ ul li:hover {
 }
 
 /* container_inner_right_top1 */
-.container_inner_right_top2{
+.container_inner_right_top2 {
     width: 100%;
     height: 5vh;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    color: #4E3F6F;
+
 }
 
+.container_inner_right_top2_txt {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+}
+
+
 /* title_category */
-.title_category{
+.title_category {
     width: 100%;
     height: 8vh;
-    border: 2px solid green;
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+}
+
+.title_category_txt {
+    color: #4E3F6F;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px;
 }
 
 /* card_category */
-.card_category{
+.card_category {
     width: 100%;
     height: 40vh;
-    border: 2px solid red;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.card_music,.card_actor{
-    width: 300px;
-    height: 10vh;
-    border: 2px solid red;
+.card_music,
+.card_actor,
+.card_Youtube,
+.card_block,
+.card_comic,
+.card_model {
+    width: 30%;
+    height: 14vh;
+    border-radius: 16px;
+    box-shadow: 0px 0px 2px black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #4E3F6F;
+}
+
+.card_music:hover {
+    color: white;
+    background-color: black;
+}
+
+.card_actor:hover {
+    color: white;
+    background-color: black;
+}
+
+.card_Youtube:hover {
+    color: white;
+    background-color: black;
+}
+
+.card_block:hover {
+    color: white;
+    background-color: black;
+}
+
+.card_comic:hover {
+    color: white;
+    background-color: black;
+}
+
+.card_model:hover {
+    color: white;
+    background-color: black;
+}
+
+
+/* card_recommend */
+.card_recommend {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.card_recommend1 {
+    width: 38%;
+    height: 55vh;
+    border: 1px solid red;
+    border-radius: 12px;
+    box-shadow: 0px 0px 2px black;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+margin-right: 12px;
+}
+
+
+/* recommend1_title */
+.recommend1_title, .recommend2_title {
+    color: #4E3F6F;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.recommend1_txt, .recommend2_txt {
+    color: #8C8CB6;
+    font-size: 15px;
+}
+
+.card_recommend1_img {
+    width: 100%;
+    height: 35vh;
+}
+
+.card_recommend2,
+.card_recommend3 {
+    width: 28%;
+    height: 55vh;
+    border: 1px solid red;
+    border-radius: 12px;
+    padding: 5px;
+    margin-right: 16px;
+}
+
+.card_recommend4,
+.card_recommend5,
+.card_recommend6 {
+    width: 20%;
+    height: 55vh;
+    border: 1px solid red;
+    border-radius: 12px;
+    box-shadow: 0px 0px 2px black;
+    margin-right:16px ;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+padding: 5px;
+}
+
+/* card_recommend2_img */
+.card_recommend2_img {
+    width: 350px;
+    height: 37vh;
 }
