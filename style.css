@@ -14,7 +14,8 @@ body {
 .container_inner_left {
     width: 10%;
     height: 100vh;
-    /* border: 1px solid rebeccapurple; */
+    border-right: 1px solid rebeccapurple;
+  margin-right: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
