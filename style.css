@@ -205,31 +205,38 @@ ul li:hover {
     height: 120vh;
     display: flex;
     flex-wrap: wrap;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .card_recommend1 {
     width: 38%;
     height: 55vh;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius: 12px;
     box-shadow: 0px 0px 2px black;
     display: flex;
     flex-direction: column;
     padding: 5px;
-margin-right: 12px;
+    margin-right: 12px;
+}
+
+.card_recommend1:hover {
+    color: white;
+    box-shadow: 0px 0px 5px black;
 }
 
 
 /* recommend1_title */
-.recommend1_title, .recommend2_title {
+.recommend1_title,
+.recommend2_title {
     color: #4E3F6F;
     font-size: 18px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.recommend1_txt, .recommend2_txt {
+.recommend1_txt,
+.recommend2_txt {
     color: #8C8CB6;
     font-size: 15px;
 }
@@ -243,30 +250,58 @@ margin-right: 12px;
 .card_recommend3 {
     width: 28%;
     height: 55vh;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius: 12px;
     padding: 5px;
     margin-right: 16px;
+    box-shadow: 0px 0px 2px black;
 }
+
 
 .card_recommend4,
 .card_recommend5,
 .card_recommend6 {
     width: 20%;
     height: 55vh;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius: 12px;
     box-shadow: 0px 0px 2px black;
-    margin-right:16px ;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-around;
-padding: 5px;
+    margin-right: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
 }
 
 /* card_recommend2_img */
 .card_recommend2_img {
     width: 350px;
     height: 37vh;
+}
+
+
+.card_recommend2:hover {
+    box-shadow: 0px 0px 5px black;
+    color: white;
+}
+
+.card_recommend3:hover {
+    box-shadow: 0px 0px 5px black;
+    color: white;
+}
+
+.card_recommend4:hover {
+    box-shadow: 0px 0px 5px black;
+    color: white;
+}
+
+.card_recommend5:hover {
+    box-shadow: 0px 0px 5px black;
+    color: white;
+}
+
+.card_recommend6:hover {
+    box-shadow: 0px 0px 5px black;
+    color: white;
 }
