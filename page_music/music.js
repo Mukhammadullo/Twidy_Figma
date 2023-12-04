@@ -77,15 +77,17 @@ async function delUser(id) {
 
 formAdd.onsubmit = (event) => {
     event.preventDefault()
+
     let newUser = {
-        name: formAdd.name.value
+        id: Date.now(),
+        name: formAdd.nameAdd.value,
     }
     addNewUser(newUser)
 }
 
 async function addNewUser(newUser) {
     try {
-        let { data } = await axios.put(`${API1}/${newUser}`)
+        let { data } = await axios.post(API1, newUser)
     } catch (error) {
         console.error(error);
     }
