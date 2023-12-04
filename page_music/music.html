@@ -43,9 +43,21 @@
         <!-- dialogAdd -->
         <dialog class="dialogAdd">
             <form class="formAdd">
-                <input type="text" placeholder="https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/629.jpg">
-                <input type="text" placeholder="Enter your name..."  name="nameAdd" >
-                <input type="text" placeholder="Enter your country...">
+                <input type="text" name="avatarAdd"
+                    placeholder="https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/629.jpg">
+                <input type="text" placeholder="Enter your name..." name="nameAdd">
+                <input type="text" placeholder="Enter your country..." name="countryAdd">
+                <button type="submit">Save</button>
+            </form>
+        </dialog>
+
+
+
+        <dialog class="dialogEdit">
+            <form class="formEdit">
+                <input type="text" name="EditAvatar">
+                <input type="text" name="EditName">
+                <input type="text" name="EditCity">
                 <button type="submit">Save</button>
             </form>
         </dialog>

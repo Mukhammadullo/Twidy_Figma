@@ -2,6 +2,8 @@ const API1 = "http://localhost:3000/data1"
 let formAdd = document.querySelector(".formAdd")
 let container_data = document.querySelector(".container_data")
 let dialogAdd = document.querySelector(".dialogAdd")
+let dialogEdit = document.querySelector(".dialogEdit")
+let formEdit = document.querySelector(".formEdit")
 let btnAddNew = document.querySelector(".btnAddNew")
 btnAddNew.onclick = () => {
     dialogAdd.showModal()
@@ -40,7 +42,9 @@ function get(newData) {
         let btnEdit = document.createElement("button")
         btnEdit.innerHTML = "Edit"
         btnEdit.classList.add("btnDel")
-
+        btnEdit.onclick = () => {
+            editFun(element)
+        }
 
         let btnDel = document.createElement("button")
         btnDel.innerHTML = "Delete"
@@ -80,7 +84,9 @@ formAdd.onsubmit = (event) => {
 
     let newUser = {
         id: Date.now(),
+        avatar: formAdd.avatarAdd.value,
         name: formAdd.nameAdd.value,
+        country: formAdd.countryAdd.value
     }
     addNewUser(newUser)
 }
@@ -88,6 +94,42 @@ formAdd.onsubmit = (event) => {
 async function addNewUser(newUser) {
     try {
         let { data } = await axios.post(API1, newUser)
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+
+
+
+// Edit
+
+
+function editFun(element) {
+    dialogEdit.showModal()
+
+    formEdit["EditAvatar"].value = element.avatar
+    formEdit["EditName"].value = element.name
+    formEdit["EditCity"].value = element.country
+
+    formEdit.onsubmit = (event) => {
+        event.preventDefault()
+        let newEditUser = {
+            avatar: formEdit["EditAvatar"].value,
+            name: formEdit["EditName"].value,
+            country: formEdit["EditCity"].value,
+        }
+        editUser(element.id, newEditUser)
+        dialogEdit.close()
+    }
+}
+
+
+// edit_____________________________
+async function editUser(id, elem) {
+    try {
+        let { data } = await axios.put(`${API1}/${id}`, elem)
+        getData()
     } catch (error) {
         console.error(error);
     }
